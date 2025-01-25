@@ -113,6 +113,25 @@ section.content div.card {
 section.content div.card:hover {
     scale: 1.05;
 }
+.boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.boton button {
+    background-color: #f4e7d1;
+    color: rgb(37, 102, 24);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+}
 
 section.content div.card:hover div.bg {
     background-size: 100%;
@@ -140,5 +159,7 @@ section.content div.card:nth-child(2n) div.description {
     background-color: white;
     color: var(--verde-oscuro);
 }
+
+
 
 
