@@ -44,10 +44,31 @@
                 </div>
                 <div class="form">
                     <form action="">
-                        <input type="text" class="w1-2" name="nombre" id="nombre" placeholder="Nombre">
-                        <input type="text" class="w1-2" name="apellido" id="apellido" placeholder="Apellido">
-                        <input type="email" class="w1-2" name="email" id="email" placeholder="Correo electrónico">
-                        <input type="number" class="w1-2" name="telefono" id="telefono" placeholder="Teléfono">
+                        <p>
+                            <input type="text" class="w1-2" name="nombre" id="nombre" placeholder="Nombre">
+                        </p>
+                        <p>
+                            <input type="text" class="w1-2" name="apellido" id="apellido" placeholder="Apellido">
+                        </p>
+                        <p>
+                            <input type="email" class="w1-2" name="email" id="email" placeholder="Correo electrónico">
+                        </p>
+                        <p>
+                            <input type="number" class="w1-2" name="telefono" id="telefono" placeholder="Teléfono">
+                        </p>
+
+                        <p>
+                            <select title="Asunto" name="asunto" id="asunto">
+                                <option value="0">Asunto</option>
+                                <option value="1">Reclamo</option>
+                                <option value="2">Sugerencia</option>
+                                <option value="3">Alquiler de espacio</option>
+                                <option value="4">Otro</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" class="textArea w1-2"></textarea>
                         <input value="Enviar" type="submit" class="login-button" />
                     </form>
                 </div>
