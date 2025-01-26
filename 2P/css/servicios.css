@@ -133,6 +133,36 @@ section.content div.card:hover {
     padding: 10px;
 }
 
+.boton button:hover {
+    background-color: rgb(141, 135, 57);
+    color: #f4e7d1;
+}
+
+.boton button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.boton button a:hover {
+    text-decoration: none;
+}   
+
+.boton button a:visited {
+    text-decoration: none;
+    background-color: #f4e7d1;
+    color: rgb(37, 102, 24);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
 section.content div.card:hover div.bg {
     background-size: 100%;
 }
