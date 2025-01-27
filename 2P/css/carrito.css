@@ -314,3 +314,10 @@ h1, h2 {
 #modoOscuro:checked ~ main h2 {
     color: white !important;
 }
+
+@media(max-width: 767px){
+    .checkout{
+        display: flex;
+        flex-direction: column;
+    }
+}
