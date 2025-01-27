@@ -76,6 +76,34 @@ main section.hero .center {
     50% { border-color: orange; }
 }
 
+@media (max-width: 767px) {
+    .typewriter h1 {
+        font-size: 2.8vw;
+    }
+
+    .center{
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .typewriter h1 {
+        overflow: hidden;
+        font-size: 4vw; /* Ajusta el tamaño de la fuente */
+        white-space: normal;
+        animation: typing 5s steps(40, end), blink-caret .75s step-end infinite; /* Ajusta la velocidad de la animación */
+    }
+
+    .typewriter {
+        width: 90%; /* Ajusta el ancho del contenedor */
+        margin: 0 auto; /* Centra el contenedor */
+    }
+
+    .center{
+        width: 100%;
+    }
+}
+
 main section.hero figure.logo {
     filter: invert(97%) sepia(1%) saturate(3%) hue-rotate(231deg) brightness(117%) contrast(100%);
     width: 100%;
@@ -104,4 +132,3 @@ section.grid img {
         scale: 1;
     }
 }
-
