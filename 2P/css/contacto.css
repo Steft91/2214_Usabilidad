@@ -180,3 +180,39 @@ form .login-button:active {
     transform: scale(0.95);
     box-shadow: rgba(29, 80, 24, 0.878) 0px 15px 10px -10px;
 }
+
+
+@media (max-width: 767px){
+    .formulario{
+        width: 100%;
+    }
+    section.content {
+        padding: 20px;
+        max-width: 100%; 
+        margin: 0 auto;
+    }
+
+    div.formulario {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 0;
+    }
+
+    div.mapa, div.form {
+        width: 100%;
+        min-width: 0;
+        margin-bottom: 20px; 
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    form input, form textarea, form select, form .login-button {
+        width: 100%;
+        margin: 0;
+    }
+}

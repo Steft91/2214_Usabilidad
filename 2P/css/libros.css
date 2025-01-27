@@ -162,19 +162,21 @@ a.carrito-link:hover {
 }
 
 .chat {
-    top: 120px;
-    position: sticky;
+    top: 500px;
+    position: fixed; /* Cambia a fixed para que se superponga correctamente */
     bottom: 10px;
-    right: 0;
+    right: 20px;
     width: 300px;
     max-height: 400px;
-    background-color: rgba(214, 203, 160, 0.85);
+    background-color: rgba(236, 225, 182, 0.85);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 1000; /* Asegúrate de que el z-index sea alto */
 }
 
 .headerChat {
-    background-color: rgb(0, 83, 25);
+    background-color: #68975a;
     color: white;
     padding: 10px, 15px;
     display: flex;
@@ -227,11 +229,10 @@ textarea {
     border-radius: 5px;
     font-size: 1rem;
     resize: none;
-    margin-top: 10px;
 }
 
 .enviar {
-    background-color: rgb(0, 83, 25);
+    background-color: #68975a;
     color: white;
     font-weight: bold;
     padding: 10px 15px;
@@ -245,7 +246,6 @@ textarea {
     background-color: rgb(34, 139, 34);
     transform: scale(1.05);
 }
-
 
 footer{
     padding: 40px 20px;
@@ -329,5 +329,34 @@ footer .icono:hover img {
     }
     50% {
         transform: scale(1.1);
+    }
+}
+
+@media (max-width: 767px) {
+    .contenedor {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        overflow-x: hidden;
+        align-items: center;
+    }
+    
+    .container {
+        position: relative;
+        width: 100vw;
+        padding: 0 10px;
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    
+    .chat {
+        margin: 0 auto;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .libros {
+        width: 90vw;
+        margin: 0 auto;
     }
 }
